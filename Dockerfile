@@ -6,11 +6,11 @@ RUN mkdir /new_chatapplication
 
 COPY new_chatapp /new_chatapplication 
 
-WORKDIR /new_chatapplication 
+#WORKDIR /new_chatapplication 
 
 RUN install python3-pip
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r new_chatapplication/requirements.txt
 
 RUN pip3 install mysqlclient
 
